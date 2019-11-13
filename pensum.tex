@@ -1,0 +1,95 @@
+
+\documentclass[a4paper,11pt]{article}
+\usepackage[headheight=14pt, top=0.5cm, bottom=0.5cm, left=.5cm, right=.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{transparent}
+\usepackage{xifthen}
+\usepackage{import}
+\usepackage[final]{pdfpages}
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
+\setboolean{@twoside}{false}
+\pdfminorversion=7
+\setlength\parindent{0pt}
+
+\newcommand{\incfig}[1]{%
+    \def\svgwidth{\columnwidth}
+    \import{./figures/}{#1.pdf_tex}
+}
+
+\begin{document}
+\title{5. semester pensum}
+\date{}
+\maketitle
+\vspace{-2cm}
+
+\tableofcontents
+\section{Eksamener}
+
+\begin{itemize}
+    \item 02/12/2020 - Statistik
+    \item 13/01/2020 - Algoritmer og datatrukturer
+    \item 20/01/2020 - Rob,Vis,AI
+    \item 21/01/2020 - Rob,Vis,Ai
+    \item 22/01/2020 - Rob,Vis,Ai
+    \item 31/01/2020 - Linux
+\end{itemize}
+
+\section{Kurser}
+
+\subsection{Robotter i Kontekst}
+
+    \begin{itemize}
+        \item Terminology
+            \begin{itemize}
+                \item Optimality
+                \item Computational Complexity
+                    \begin{itemize}
+                        \item Completeness
+                            \begin{itemize}
+                                \item Resolution
+                                \item Probabilistic
+                            \end{itemize}
+                        \item Online / Offline
+                        \item Sensor / Model based
+                        \item Feedback / Blind
+                        \item Bounded / unbounded configuration space
+                        \item Holonomic
+                        \item Configuration Space
+                        \item Homogenous Transform
+                        \item Sensors
+                    \end{itemize}
+            \end{itemize}
+    \end{itemize}
+    \begin{itemize}
+        \item Motion algoritmer
+            \begin{itemize}
+                \item Bug 0
+                \item Bug 1
+                \item Bug 2
+            \end{itemize}
+    \end{itemize}
+    \begin{itemize}
+        \item Line representation
+            \begin{itemize}
+                \item Line fitting
+            \end{itemize}
+        \item Line extration algoritmer
+            \begin{itemize}
+                \item Spilt-and-merge
+                \item Incremental
+                \item RANSAC
+                \item Hough transform
+            \end{itemize}
+    \end{itemize}
+
+\subsection{AI}
+\subsection{Computervision}
+\subsection{Statistik}
+\subsection{Linux}
+\subsection{Algoritmer og datatrukturer}
+
+
+\end{document}
